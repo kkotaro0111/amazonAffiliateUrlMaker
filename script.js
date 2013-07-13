@@ -5,7 +5,7 @@ if(dppos == -1){
 }
 
 if(dppos == -1){
-	alert("No ASIN code");
+	console.log("No ASIN code");
 	return;
 }
 
