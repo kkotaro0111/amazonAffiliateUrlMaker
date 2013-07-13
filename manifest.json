@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "Amazon Affiliate Url Maker",
+	"version": "1.0",
+	"description": "aaum",
+	"permissions":[
+		"http://*amazon*/"
+	],
+	"content_scripts":[{
+		"matches": ["http://www.amazon.co.jp/*"],
+		"js": ["class.js","account.js","script.js"],
+		"run_at" : "document_end"
+	}]
+}
