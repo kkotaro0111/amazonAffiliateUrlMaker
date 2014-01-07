@@ -21,7 +21,7 @@ if( form.length === 0){
     size: url.length + 5,
     readonly: true
   }).css({
-    position: "absolute",
+    position: "fixed",
     right: 0,
     bottom: 0
   }).on("focus",function(e){
