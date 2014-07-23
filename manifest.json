@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Amazon Affiliate Url Maker",
-	"version": "1.6",
+	"version": "1.7",
 	"description": "aaum",
 	"permissions":[
 		"http://www.amazon.co.jp/"
