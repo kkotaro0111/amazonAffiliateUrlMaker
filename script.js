@@ -6,9 +6,10 @@ if(dppos === 0){
   console.log("No ASIN code");
 }else{
   var asin = params[dppos];
+  var title = $("#productTitle").text();
   var url = "http://amazon.jp/dp/"+asin+"/"+window.amzn.affiliate.account;
 
-  console.log(url);
+  console.log(title, url);
 
   var form = $("#asamashi");
   if( form.length === 0){
@@ -16,7 +17,7 @@ if(dppos === 0){
     form.attr({
       type: "text",
       id: "asamashi",
-      size: url.length + 5,
+      width: "100%",
       readonly: true
     }).css({
       position: "fixed",
@@ -29,5 +30,5 @@ if(dppos === 0){
     form.appendTo("body");
   }
 
-  form.val( url );
+  form.val( title + " " + url );
 }
