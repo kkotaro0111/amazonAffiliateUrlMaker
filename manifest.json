@@ -4,10 +4,11 @@
 	"version": "1.7",
 	"description": "aaum",
 	"permissions":[
-		"http://www.amazon.co.jp/"
+		"http://www.amazon.co.jp/",
+		"https://www.amazon.co.jp/"
 	],
 	"content_scripts":[{
-		"matches": ["http://www.amazon.co.jp/*"],
+		"matches": ["http://www.amazon.co.jp/*", "https://www.amazon.co.jp/*"],
 		"js": ["jquery-2.0.3.min.js", "class.js","account.js","script.js"],
 		"run_at" : "document_end"
 	}]
