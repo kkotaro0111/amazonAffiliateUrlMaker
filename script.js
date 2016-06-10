@@ -7,9 +7,10 @@ if(dppos === 0){
 }else{
   var asin = params[dppos];
   var title = $("#productTitle").text();
+  var trimed_title = title.replace(/^[\s]*(.*)[\s]*$/, "$1");
   var url = "http://amazon.jp/dp/"+asin+"/"+window.amzn.affiliate.account;
 
-  console.log(title, url);
+  console.log(trimed_title, url);
 
   var form = $("#asamashi");
   if( form.length === 0){
@@ -30,5 +31,5 @@ if(dppos === 0){
     form.appendTo("body");
   }
 
-  form.val( title + " " + url );
+  form.val( trimed_title + " " + url );
 }
